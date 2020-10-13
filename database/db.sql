@@ -2,18 +2,18 @@ CREATE DATABASE database_links;
 
 USE database_links; 
 --Tabla usuarios
-CREATE TABLE usuarios {
-    idUsuario int,  not null,
+CREATE TABLE usuarios (
+    idUsuario int  not null,
     nombre varchar(20) not null,
     contraseña varchar(50) not null,
     fullname varchar(80) not null
-};
+);
 
 ALTER TABLE usuarios
     ADD PRIMARY KEY(idUsuario);
 
 ALTER TABLE usuarios
-    MODIFY idUsuario int, not null AUTO_INCREMENT, AUTO_INCREMENT = 1;
+    MODIFY idUsuario int not null AUTO_INCREMENT, AUTO_INCREMENT = 1;
 
 DESCRIBE usuarios;  
 
