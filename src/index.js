@@ -8,6 +8,7 @@ const session = require('express-session');
 const MySQLStore = require('express-mysql-session')(session);
 const { database } = require('./keys');
 const passport = require('passport');
+
 // Inicializaciones
 
 const app = express();
@@ -46,6 +47,8 @@ app.use(passport.session());
 
 app.use((req, res, next) => {
     app.locals.success = req.flash('success');
+    app.locals.message = req.flash('message');
+    app.locals.user = req.user;
     next();
 });
 
