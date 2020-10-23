@@ -1,0 +1,25 @@
+body{
+    background-color: lightblue;
+}
+
+.card-body{
+    background-color: gray;
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+.btn-secondary{
+    background-color: blue;
+}
+
+.card-body:hover{
+    color: cyan;
+}
+
+h3:active{
+    color: cyan;
+}
+
